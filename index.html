@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>Xin Zhou's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Xin Zhou is currently a doctoral student at ZJU FAST Lab">
+  <meta name="keywords"
+    content="Xin Zhou, 周鑫, zhouxin, Zhou Xin, Robotics, Flying Robots, Motion Planning, Swarm Robots, Zhejiang University, FAST Lab">
+  <meta name="author" content="Xin Zhou" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+    .w3-sidebar a {
+      font-family: "Roboto", sans-serif
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .w3-wide {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icons.png">
+
+  <script src="jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  //
+
+</head>
+
+<!-- <style>
+  .pub_pic_style {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    min-width: 150px;
+  }
+
+  .container {
+    width: 100%;
+  }
+</style> -->
+
+
+<body class="w3-content" style="max-width:1000px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-blue-grey w3-collapse w3-top w3-right" style="z-index:3;width:150px"
+    id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <h3><b>ZHOUXIN</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#award" class="w3-bar-item w3-button">Awards</a>
+      <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+      <a href="#codes" class="w3-bar-item w3-button">Codes</a>
+      <a href="#comments" class="w3-bar-item w3-button">Comments</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-blue-grey w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">ZHOUXIN</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"
+      style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+    </div>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:150px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- The Home Section -->
+    <div class="w3-container w3-center w3-padding-32" id="home">
+      <img style="width: 95%;max-width: 600px" alt="profile photo" src="images/Xin_new.jpg" />
+      <h1>Xin Zhou</h1>
+      <p class="w3-justify"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+        I am a doctoral student of <a href="http://zju-fast.com/">FAST Lab</a> at <a
+          href="https://www.zju.edu.cn/">Zhejiang University</a>, China, where I work on aerial robots, autonomous
+        navigation, swarm robotics, and etc. My mentors are <a href="https://ecefeigao.wordpress.com/">Fei Gao</a> and
+        <a href="https://person.zju.edu.cn/xu/">Chao Xu</a>. My dream is to make aerial robots fly freely like a flock
+        of birds.
+      </p>
+      <p class="w3-center"><strong>
+        <a href="mailto:iszhouxin@zju.edu.cn">Email:</a> iszhouxin@zju.edu.cn &nbsp|&nbsp
+        <a href="https://scholar.google.com/citations?user=9r_6am8AAAAJ">Google Scholar</a> &nbsp|&nbsp
+        <a href="https://www.linkedin.cn/incareer/in/ACoAADTZUc8BP6zsoV4ipZh8Ddy3lNhCkOWnUBc"> LinkedIn</a></strong>
+      </p>
+      </tbody>
+      </table>
+    </div>
+
+
+    <!-- The Template Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h2>Template</h2>
+      <p class="w3-justify">
+        Discription.
+      </p>
+
+      <h4>
+        <li>Project 1</li>
+      </h4>
+      <img style="width:20%;" src="images/PlaceHolder.jpg" />
+      <p class="w3-justify">
+        <a style="color: #447ec9" href="https://">Link</a>
+      </p>
+      <p class="w3-justify">
+        Discription <span style="color:red">Discription</span> Discription <strong>Discription</strong> Discription.
+      </p>
+
+    </div>
+
+    <!-- The Awards Section -->
+    <div class="w3-container w3-light-grey w3-padding-32" id="award">
+      <h2>Awards</h2>
+      <p>
+        <li> 2022, <a href="https://mp.weixin.qq.com/s/nVwObfiFLKBgmGz-59h2Yw/">Chu Kochen Scholarship (President's
+            Scholarship)</a>
+      </p>
+      <p>
+        <li> 2022, National Scholarship for Doctoral Students
+      </p>
+      <p>
+        <li> 2021, SUPCON Enterprise Scholarship
+      </p>
+      <p>
+        <li> 2020, IEEE T-RO Best Paper Award Honorable Mention
+      </p>
+      <p>
+        <li> 2018, National Scholarship for Undergraduate Students
+      </p>
+      <p>
+        <li> 2017, National Scholarship for Undergraduate Students
+      </p>
+      <p>
+        <li> 2016, National Scholarship for Undergraduate Students
+      </p>
+    </div>
+
+    <!-- The Publications Section -->
+    <div class="w3-container w3-padding-32" id="publications">
+      <h2>Publications</h2>
+
+      <h4> Journal Papers:</h4>
+
+      <ol>
+
+        <p>
+          <!-- <img style="width: 15%;max-width: 300px; float:right" alt="profile photo" src="images/placeholder.jpg"/> -->
+          <li><strong>Swarm of micro flying robots in the wild</strong>
+            <br>
+            <strong>Xin Zhou</strong>, Xiangyong Wen, Zhepei Wang, Yuman Gao, Haojia Li, Qianhao Wang, Tiankai Yang,
+            Haojian Lu, Yanjun Cao, Chao Xu, Fei Gao
+            <br>
+            <strong><em>Science Robotics (Cover Paper)</em></strong> | <a style="color: #447ec9"
+              href="https://www.science.org/doi/pdf/10.1126/scirobotics.abm5954">paper link</a> | <a
+              style="color: #447ec9" href="https://github.com/ZJU-FAST-Lab/EGO-Planner-v2">code</a> | videos: <a
+              style="color: #447ec9" href="https://www.youtube.com/watch?v=L0fJ0EHHfOA/">YouTube</a>, <a
+              style="color: #447ec9" href="https://www.bilibili.com/video/BV1qv4y1K7Y6/">bilibili</a>
+            <br>
+            <!-- <img style="width: 12%;max-width: 300px" alt="profile photo" src="images/placeholder.jpg"/> -->
+            <!-- <div class="container">
+              <div class="pub_pic_style">
+                <img src="images/placeholder.jpg" style="max-width: 100%;" />
+              </div>
+              <div class="pub_pic_style">
+                <img src="images/placeholder.jpg" style="max-width: 100%;" />
+              </div>
+              <div class="pub_pic_style">
+                <img src="images/placeholder.jpg" style="max-width: 100%;" />
+              </div>
+              <div class="pub_pic_style">
+                <img src="images/placeholder.jpg" style="max-width: 100%;" />
+              </div>
+            </div> -->
+
+            <div align="left">
+              <img src="images/paper_cover.jpg" height="200" width="">
+              <img src="images/forest_swarm.jpg" height="200" width="">
+              <img src="images/hand_drone.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>EGO-Planner: An esdf-free gradient-based local planner for quadrotors</strong>
+            <br>
+            <strong>Xin Zhou</strong>, Zhepei Wang, Hongkai Ye, Chao Xu, Fei Gao
+            <br>
+            <strong><em>IEEE Robotics and Automation Letters</em></strong> | <a style="color: #447ec9"
+              href="https://ieeexplore.ieee.org/abstract/document/9309347/">paper link</a> | <a style="color: #447ec9"
+              href="https://arxiv.org/pdf/2008.08835.pdf">pdf</a> | <a style="color: #447ec9"
+              href="https://github.com/ZJU-FAST-Lab/ego-planner">code</a> | videos: <a style="color: #447ec9"
+              href="https://www.youtube.com/watch?v=UKoaGW7t7Dk">YouTube</a>, <a style="color: #447ec9"
+              href="https://www.bilibili.com/video/BV1VC4y1t7F4/">bilibili</a>
+
+            <div align="left">
+              <img src="images/ego_fly.jpg" height="200" width="">
+              <img src="images/ego_forest.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>Geometrically constrained trajectory optimization for multicopters</strong>
+            <br>
+            Zhepei Wang, <strong>Xin Zhou</strong>, Chao Xu, Fei Gao
+            <br>
+            <strong><em>IEEE Transactions on Robotics</em></strong> | <a style="color: #447ec9"
+              href="https://ieeexplore.ieee.org/abstract/document/9765821">paper link</a> | <a style="color: #447ec9"
+              href="https://github.com/ZJU-FAST-Lab/GCOPTER">code</a> | videos 1: <a style="color: #447ec9"
+              href="https://www.youtube.com/watch?v=pQ4oSf1rdBU">YouTube</a>, <a style="color: #447ec9"
+              href="https://www.bilibili.com/video/BV1bb4y1X7VE/">bilibili</a>; videos 2: <a style="color: #447ec9"
+              href="https://www.youtube.com/watch?v=QQS0AM3iOmc">YouTube</a>, <a style="color: #447ec9"
+              href="https://www.bilibili.com/video/BV1pq4y1z7Jp/">bilibili</a>
+
+            <div align="left">
+              <img src="images/gcopter_gap.jpg" height="200" width="">
+              <img src="images/gcopter_pklot.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>Teach-Repeat-Replan: A complete and robust system for aggressive flight in complex
+              environments</strong>
+            <br>
+            Fei Gao, Luqi Wang, Boyu Zhou, <strong>Xin Zhou</strong>, Jie Pan, Shaojie Shen
+            <br>
+            <strong><em>IEEE Transactions on Robotics</em></strong> | <a style="color: #447ec9"
+              href="https://ieeexplore.ieee.org/abstract/document/9102390/">paper link</a> | <a style="color: #447ec9"
+              href="https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan">code</a> | videos: <a
+              style="color: #447ec9" href="https://www.youtube.com/watch?v=urEC2AAGEDs">YouTube</a>, <a
+              style="color: #447ec9" href="https://www.bilibili.com/video/BV1Fx411o78w/">bilibili</a>
+
+            <div align="left">
+              <img src="images/TRR_real.jpg" height="200" width="">
+              <img src="images/TRR_vis.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>Alternating minimization based trajectory generation for quadrotor aggressive flight</strong>
+            <br>
+            Zhepei Wang, <strong>Xin Zhou</strong>, Chao Xu, Jian Chu, Fei Gao
+            <br>
+            <strong><em>IEEE Robotics and Automation Letters</em></strong> | <a style="color: #447ec9"
+              href="https://ieeexplore.ieee.org/abstract/document/9121729">paper link</a> | <a style="color: #447ec9"
+              href="https://github.com/ZJU-FAST-Lab/am_traj">code</a> | videos: <a style="color: #447ec9"
+              href="https://www.youtube.com/watch?v=H89ALyWA2NI">YouTube</a>, <a style="color: #447ec9"
+              href="https://www.bilibili.com/video/BV1H7411T71n/">bilibili</a>
+
+            <div align="left">
+              <img src="images/AM_traj.jpg" height="200" width="">
+              <img src="images/AM_vis.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>TGK-Planner: An efficient topology guided kinodynamic planner for autonomous quadrotors</strong>
+            <br>
+            Hongkai Ye, <strong>Xin Zhou</strong>, Zhepei Wang, Chao Xu, Jian Chu, Fei Gao
+            <br>
+            <strong><em>IEEE Robotics and Automation Letters</em></strong> | <a style="color: #447ec9"
+              href="https://ieeexplore.ieee.org/abstract/document/9310332">paper link</a> | <a style="color: #447ec9"
+              href="https://github.com/ZJU-FAST-Lab/TGK-Planner">code</a> | videos: <a style="color: #447ec9"
+              href="https://www.youtube.com/watch?v=nNS0p8h5zAk">YouTube</a>, <a style="color: #447ec9"
+              href="https://www.bilibili.com/video/BV1gA411e7DH/">bilibili</a>
+
+            <div align="left">
+              <img src="images/TGK_method.jpg" height="200" width="">
+              <img src="images/TGK_search.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>Enhanced decentralized autonomous aerial robot teams with group planning</strong>
+            <br>
+            Jialiang Hou, <strong>Xin Zhou</strong>, Zhongxue Gan, Fei Gao
+            <br>
+            <strong><em>IEEE Robotics and Automation Letters</em></strong> | <a style="color: #447ec9"
+              href="https://ieeexplore.ieee.org/abstract/document/9830853">paper link</a> | <a style="color: #447ec9"
+              href="https://github.com/ZJU-FAST-Lab/EDG-TEAM">code</a> | videos: <a style="color: #447ec9"
+              href="https://www.youtube.com/watch?v=-UR4rF7HbWo">YouTube</a>, <a style="color: #447ec9"
+              href="https://www.bilibili.com/video/BV1BY411G7xR/">bilibili</a>
+
+            <div align="left">
+              <img src="images/hou.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>Unmanned aerial vehicle‐mediated drug delivery for first aid</strong>
+            <br>
+            Tao Sheng, Rui Jin, Changwei Yang, Ke Qiu, Mingyang Wang, Jiaqi Shi, Jingyu Zhang, Yuman Gao, Qing Wu,
+            <strong>Xin Zhou</strong>, Hao Wang, Juan Zhang, Qin Fang, Neng Pan, Yanan Xue, Yue Wang, Rong Xiong, Fei
+            Gao, Yuqi Zhang, Haojian Lu, Jicheng Yu, Zhen Gu
+            <br>
+            <strong><em>Advanced Materials</em></strong> | <a style="color: #447ec9"
+              href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.202208648">paper link</a>
+
+            <div align="left">
+              <img src="images/jin.jpg" height="200" width="">
+            </div>
+        </p>
+
+      </ol>
+
+      <h4> Conference Papers:</h4>
+
+      <ol>
+
+        <p>
+          <li><strong>EGO-Swarm: A fully autonomous and decentralized quadrotor swarm system in cluttered
+              environments</strong>
+            <br>
+            <strong>Xin Zhou</strong>, Jiangchao Zhu, Hongyu Zhou, Chao Xu, Fei Gao
+            <br>
+            <strong><em>International Conference on Robotics and Automation (ICRA)</em></strong> | <a
+              style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9561902">paper link</a> | <a
+              style="color: #447ec9" href="https://github.com/ZJU-FAST-Lab/ego-planner-swarm">code</a> | videos: <a
+              style="color: #447ec9" href="https://www.youtube.com/watch?v=K5WKg8meb94">YouTube</a>, <a
+              style="color: #447ec9" href="https://www.bilibili.com/video/BV1Nt4y1e7KD/">bilibili</a></a>
+
+            <div align="left">
+              <img src="images/ego_swarm_real.jpg" height="200" width="">
+              <img src="images/ego_swarm_sim.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>Automatic parameter adaptation for quadrotor trajectory planning</strong>
+            <br>
+            <strong>Xin Zhou</strong>, Chao Xu, Fei Gao
+            <br>
+            <strong><em>International Conference on Intelligent Robots and Systems (IROS)</em></strong> | <a
+              style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9981552">paper link</a> | <a
+              style="color: #447ec9" href="https://github.com/ZJU-FAST-Lab/Auto-Param-Adaption">code</a> | videos: <a
+              style="color: #447ec9" href="https://www.bilibili.com/video/BV1je4y1d7LM/">bilibili</a></a>
+
+            <div align="left">
+              <img src="images/adaptive.jpg" height="200" width="">
+            </div>
+        </p>
+
+        <p>
+          <li><strong>CMPCC: Corridor-based model predictive contouring control for aggressive drone flight</strong>
+            <br>
+            Jialin Ji*, <strong>Xin Zhou*</strong>, Chao Xu, Fei Gao (*Equal Contribution)
+            <br>
+            <strong><em>International Symposium on Experimental Robotics (ISER)</em></strong> | <a
+              style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-030-71151-1_4">paper link</a>
+            | <a style="color: #447ec9" href="https://github.com/ZJU-FAST-Lab/CMPCC">code</a> | videos: <a
+              style="color: #447ec9" href="https://www.youtube.com/watch?v=_7CzBh-0wQ0">YouTube</a>, <a
+              style="color: #447ec9" href="https://www.bilibili.com/video/BV1cZ4y1u7Ur/">bilibili</a></a>
+
+            <div align="left">
+              <img src="images/CMPCC.jpg" height="200" width="">
+            </div>
+        </p>
+
+      </ol>
+
+      </p>
+    </div>
+
+    <!-- The Codes Section -->
+    <div class="w3-container w3-light-grey w3-padding-32" id="codes">
+      <h2>Codes</h2>
+      <p>
+        <img style="width: 60%;max-width: 600" src="images/ego_planner_series.jpg" />
+      </p>
+
+
+      <p>
+      <h5> 
+        <a href="https://github.com/ZJU-FAST-Lab/ego-planner">EGO-Planner</a> 
+      </h5>
+
+        <img src="https://img.shields.io/github/stars/ZJU-FAST-Lab/ego-planner?style=social"/>
+      </br>
+
+        XXXXXXXXXXXXXXXXXXXXXX
+      </p>
+
+      <h5> <a href="https://github.com/ZJU-FAST-Lab/ego-planner-swarm">EGO-Swarm</a>
+      </h5>
+
+      <p>
+
+        <img src="https://img.shields.io/github/stars/ZJU-FAST-Lab/ego-planner-swarm?style=social"/>
+      </br>
+        XXXXXXXXXXXXXXXXXXXXXX
+      </p>
+
+      <h5> <a href="https://github.com/ZJU-FAST-Lab/ego-planner-v2">EGO-Planner-v2</a>
+      </h5>
+
+      <p>
+        <img src="https://img.shields.io/github/stars/ZJU-FAST-Lab/ego-planner-v2?style=social"/>
+      </br>
+        XXXXXXXXXXXXXXXXXXXXXX
+      </p>
+
+    </div>
+
+    <!-- The Comments Section -->
+    <div class="w3-container w3-padding-32" id="comments">
+      <h2>Comments</h2>
+
+    </div>
+
+    <div class="w3-light-grey w3-center w3-padding-24">
+
+      Acknowledgement: the page is built on <a href="https://github.com/YunheWang/HomePage">this repo</a>.</br>
+
+      <!-- Default Statcounter code for My Homepage
+  https://www.wangyunhe.site -->
+      <!--   No.
+  <script type="text/javascript">
+  var sc_project=12347113; 
+  var sc_invisible=0; 
+  var sc_security="21aca5d1"; 
+  var sc_https=1; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script> Visitor Since Feb 2022. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div>
+  </noscript> -->
+      <!-- End of Statcounter Code -->
+
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Accordion 
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+
+
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
