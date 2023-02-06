@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
@@ -61,20 +61,6 @@
 
 </head>
 
-<!-- <style>
-  .pub_pic_style {
-    float: left;
-    width: 25%;
-    box-sizing: border-box;
-    padding: 5px;
-    min-width: 150px;
-  }
-
-  .container {
-    width: 100%;
-  }
-</style> -->
-
 
 <body class="w3-content" style="max-width:1000px">
 
@@ -86,9 +72,10 @@
     </div>
     <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
       <a href="#home" class="w3-bar-item w3-button">Home</a>
-      <a href="#award" class="w3-bar-item w3-button">Awards</a>
       <a href="#publications" class="w3-bar-item w3-button">Publications</a>
       <a href="#codes" class="w3-bar-item w3-button">Codes</a>
+      <a href="#award" class="w3-bar-item w3-button">Awards</a>
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
       <a href="#comments" class="w3-bar-item w3-button">Comments</a>
     </div>
   </nav>
@@ -134,7 +121,7 @@
 
 
     <!-- The Template Section -->
-    <div class="w3-container w3-padding-32" id="projects">
+ <!--    <div class="w3-container w3-padding-32" id="projects">
       <h2>Template</h2>
       <p class="w3-justify">
         Discription.
@@ -151,37 +138,10 @@
         Discription <span style="color:red">Discription</span> Discription <strong>Discription</strong> Discription.
       </p>
 
-    </div>
-
-    <!-- The Awards Section -->
-    <div class="w3-container w3-light-grey w3-padding-32" id="award">
-      <h2>Awards</h2>
-      <p>
-        <li> 2022, <a href="https://mp.weixin.qq.com/s/nVwObfiFLKBgmGz-59h2Yw/">Chu Kochen Scholarship (President's
-            Scholarship)</a>
-      </p>
-      <p>
-        <li> 2022, National Scholarship for Doctoral Students
-      </p>
-      <p>
-        <li> 2021, SUPCON Enterprise Scholarship
-      </p>
-      <p>
-        <li> 2020, IEEE T-RO Best Paper Award Honorable Mention
-      </p>
-      <p>
-        <li> 2018, National Scholarship for Undergraduate Students
-      </p>
-      <p>
-        <li> 2017, National Scholarship for Undergraduate Students
-      </p>
-      <p>
-        <li> 2016, National Scholarship for Undergraduate Students
-      </p>
-    </div>
+    </div> -->
 
     <!-- The Publications Section -->
-    <div class="w3-container w3-padding-32" id="publications">
+    <div class="w3-light-gray w3-container w3-padding-32" id="publications">
       <h2>Publications</h2>
 
       <h4> Journal Papers:</h4>
@@ -201,21 +161,6 @@
               style="color: #447ec9" href="https://www.youtube.com/watch?v=L0fJ0EHHfOA/">YouTube</a>, <a
               style="color: #447ec9" href="https://www.bilibili.com/video/BV1qv4y1K7Y6/">bilibili</a>
             <br>
-            <!-- <img style="width: 12%;max-width: 300px" alt="profile photo" src="images/placeholder.jpg"/> -->
-            <!-- <div class="container">
-              <div class="pub_pic_style">
-                <img src="images/placeholder.jpg" style="max-width: 100%;" />
-              </div>
-              <div class="pub_pic_style">
-                <img src="images/placeholder.jpg" style="max-width: 100%;" />
-              </div>
-              <div class="pub_pic_style">
-                <img src="images/placeholder.jpg" style="max-width: 100%;" />
-              </div>
-              <div class="pub_pic_style">
-                <img src="images/placeholder.jpg" style="max-width: 100%;" />
-              </div>
-            </div> -->
 
             <div align="left">
               <img src="images/paper_cover.jpg" height="200" width="">
@@ -405,7 +350,7 @@
     </div>
 
     <!-- The Codes Section -->
-    <div class="w3-container w3-light-grey w3-padding-32" id="codes">
+    <div class="w3-container w3-padding-32" id="codes">
       <h2>Codes</h2>
       <p>
         <img style="width: 60%;max-width: 600" src="images/ego_planner_series.jpg" />
@@ -414,65 +359,143 @@
 
       <p>
       <h5> 
-        <a href="https://github.com/ZJU-FAST-Lab/ego-planner">EGO-Planner</a> 
+        <a href="https://github.com/ZJU-FAST-Lab/ego-planner"><strong>EGO-Planner</strong></a> 
       </h5>
 
         <img src="https://img.shields.io/github/stars/ZJU-FAST-Lab/ego-planner?style=social"/>
       </br>
 
-        XXXXXXXXXXXXXXXXXXXXXX
+        Initially released in 2020, EGO-Planner is a <strong>lightweight, highly-optimized, robust, gradient-based local planner</strong>, which significantly reduces computation time compared to some state-of-the-art methods. The total planning time is only <strong>around 1ms</strong> without ESDF construction.
+      </br>
+        <div align="left">
+          <img src="images/ego_indoor.gif" height="160" width="">
+          <img src="images/ego_outdoor.gif" height="160" width="">
+          <img src="images/ego_time.jpg" height="160" width="">
+        </div>
       </p>
 
-      <h5> <a href="https://github.com/ZJU-FAST-Lab/ego-planner-swarm">EGO-Swarm</a>
+      <h5> <a href="https://github.com/ZJU-FAST-Lab/ego-planner-swarm"><strong>EGO-Swarm</strong></a>
       </h5>
 
       <p>
 
         <img src="https://img.shields.io/github/stars/ZJU-FAST-Lab/ego-planner-swarm?style=social"/>
       </br>
-        XXXXXXXXXXXXXXXXXXXXXX
+        EGO-Swarm is a <strong>decentralized and asynchronous systematic solution</strong> for multi-robot autonomous navigation in unknown obstacle-rich scenes using merely onboard resources. Evolved from EGO-Planner, EGO-Swarm shares identical obstacle-avoidance algorithms with EGO-Planner but has several new modules added for swarm implemenation. 
+      </br>
+        <div align="left">
+          <img src="images/ego_swarm_sim.gif" height="220" width="">
+          <img src="images/ego_swarm_outdoor.gif" height="220" width="">
+        </div>
       </p>
 
-      <h5> <a href="https://github.com/ZJU-FAST-Lab/ego-planner-v2">EGO-Planner-v2</a>
+      <h5> <a href="https://github.com/ZJU-FAST-Lab/ego-planner-v2"><strong>EGO-Planner-v2</strong></a>
       </h5>
 
       <p>
         <img src="https://img.shields.io/github/stars/ZJU-FAST-Lab/ego-planner-v2?style=social"/>
       </br>
-        XXXXXXXXXXXXXXXXXXXXXX
+        EGO-Planner-v2 is an evolution of EGO-Swarm. 1. We introduce <a href="https://github.com/ZJU-FAST-Lab/GCOPTER">MINCO</a>, a trajectory optimization backend that offers higher optimality with lower computation as EGO-Swarm. 2. We provide a variety of new implemenations, such as swarm formation, multi-agent tracking, dynamical obstacle avoidance, swarm manipulation interface and more. 3. The hardware is first released along with testing data on <a href="https://zenodo.org/record/5804079#.Y-B9Jy9By4Q">zenodo</a>.
+              </br>
+        <div align="left">
+          <img src="images/swarm_forest.gif" height="220" width="">
+          <img src="images/swarm_formation.gif" height="220" width="">
+        </div>
       </p>
 
     </div>
 
-    <!-- The Comments Section -->
-    <div class="w3-container w3-padding-32" id="comments">
-      <h2>Comments</h2>
-
+    <!-- The Awards Section -->
+    <div class="w3-container w3-light-grey w3-padding-32" id="award">
+      <h2>Awards</h2>
+      <p>
+        <li> 2022, <a href="https://mp.weixin.qq.com/s/nVwObfiFLKBgmGz-59h2Yw">Chu Kochen Scholarship (President's
+            Scholarship)</a>
+      </p>
+      <p>
+        <li> 2022, National Scholarship for Doctoral Students
+      </p>
+      <p>
+        <li> 2021, SUPCON Enterprise Scholarship
+      </p>
+      <p>
+        <li> 2020, IEEE T-RO Best Paper Award Honorable Mention
+      </p>
+      <p>
+        <li> 2018, National Scholarship for Undergraduate Students
+      </p>
+      <p>
+        <li> 2017, National Scholarship for Undergraduate Students
+      </p>
+      <p>
+        <li> 2016, National Scholarship for Undergraduate Students
+      </p>
     </div>
 
-    <div class="w3-light-grey w3-center w3-padding-24">
+    <!-- The Services Section -->
+    <div class="w3-container w3-padding-32" id="services">
+      <h2>Services</h2>
+      <p>
+      <li><a href="https://mp.weixin.qq.com/s?__biz=MzI3MDM5OTM4OA==&mid=2247498176&idx=3&sn=94615527dd1db91d0504448f24c96374&chksm=ead31b33dda492251da94bc2e3c6b5b9011e5c8a607c0f52cff231ddb21eac903c92f0a0616a">National youth robot popular science open class</a> hosted by the college of control science and engineering, Zhejiang University.</li>
+      </p>
+      <p>
+      <li><a href="http://www.cse.zju.edu.cn/2023/0121/c39283a2711687/page.htm">National PhD student academic forum on swarm intelligence for unmanned systems.</a> (Awarded best report)</li>
+      </p>
+      <p>
+      <li>"Autonomous flight and swarm technology" invited by <a href="https://ac.bit.edu.cn/szdw/jsml/mssbyznxtyjs1/224f1108f85a435d9efaaa3dc05fa536.htm">Gang Wang</a>, Beijing Institute of Technology.</li>
+      <p>
+      <li><a href="https://www.bilibili.com/video/BV1r84y167nX/?vd_source=642e317ba045167a6e465e4717703d53">D-COS Graduate Scholarly Forum for Excellence.</a></li>
+      </p>
+      <p>
+      <li>"Autonomous navigation for aerial robots and swarms" invited by <a href="https://iwin.sjtu.edu.cn/Web/FacultyShow/35?name=Xiaoming">Xiaoming Duan</a>, Shanghai Jiao Tong University.</li>
+      </p>
+      <p>
+      <li>"Autonomous navigation for aerial robots", doctoral conference hosted by HUAWEI, Hangzhou.</li>
+      </p>
+      </p>
+      <p>
+      <li>"Lesson 7: motion planning for swarm robots" as part of the online course "motion planning for mobile robots", <a href="https://www.shenlanxueyuan.com/course/575">SHENLANXUEYUAN</a>.</li>
+      </p>
+    </div>
+
+    <!-- The Comments Section -->
+    <div class="w3-container w3-light-grey w3-padding-32" id="comments">
+      <h2>Comments</h2>
+      <p>
+      <li><a href="https://www.science.org/content/article/watch-swarm-drones-fly-through-heavy-forest-while-staying-formation"><strong>Science</strong></a>: Weaving through dense woods is a challenge for even the smartest drone. Trying to do it as part of a swarm is orders of magnitude harder. But researchers have now cracked the code.</li>
+      </p>
+      <p>
+      <li><a href="https://www.nsfc.gov.cn/publish/portal0/tab448/info87351.htm"><strong>National Natural Science Foundation of China（国家自然科学基金委）</strong></a>: The research achieved autonomous flight for aerial swarms in extremely low-altitude, dense and irregular natural environments, and its technology is at the forefront in multiple aspects, such as intelligence, agility, coordination, robustness, and so on, for aerial-robot swarms.（该研究工作实现了在超低空、强密集、无规则的自然环境中的集群自主飞行，其技术在空中机器人集群的智能性、灵巧性、协同性、鲁棒性等多个方面处于领域领先水平。）</li>
+      </p>
+      <p>
+      <li><a href="https://app.guangmingdaily.cn/as/opened/n/7f6cc6f6a02746969a11bfcd1201f472"><strong>Guangming Daily（光明日报）</strong></a>: In more than two years of research, the research team from Zhejiang University achieved a series of core technologies, such as intelligent navigation and rapid obstacle avoidance for robots in complex unknown environments both individually and as a group, bringing scenes previously only seen in movies to the real world.（在两年多的研究中，浙大科研团队解决了未知复杂环境下机器人单机与群体的智能导航与快速避障方法等一系列核心技术，将只能在电影里面看到的场面带到现实世界。）</li>
+      </p>
+      <p>
+      <li><a href="https://h.xinhuaxmt.com/vh512/share/10779610"><strong>Xinhua News Agency（新华社）</strong></a>: They developed a compact, lightweight, self-controllable, and swarm-capable robotic flying system, with individual aerial robots no larger than a hand palm, lighter than the weight of a can of cola.（他们研发出小巧轻便、自主可控又能成群结队的机器人飞行系统，单个空中机器人只有手掌大小，比一罐可乐的重量还要轻。）</li>
+      </p>
+      <li><a href="http://en.people.cn/n3/2022/0505/c90000-10092434.html"><strong>People's daily online（人民网）</strong></a>: The new system is expected to help rescuers in search and rescue operations in forests, animal and plant researchers, and even ordinary people who may receive packages delivered by aerial robots to their balconies in the coming years.</li>
+      </p>
+      <p>
+      <li><a href="https://www.thetimes.co.uk/article/drones-branch-out-to-swarming-through-forests-rkq3wktj3"><strong>The Times（泰晤士报）</strong></a>: It may look like a scene from a science fiction film, but Chinese researchers have created small drones capable of flying autonomously in a “swarm” through even dense forests.</li>
+      </p>
+      <p>
+      <li><a href="https://www.france24.com/en/live-news/20220504-drone-swarms-can-now-fly-autonomously-through-thick-forest"><strong>France 24</strong></a>: "This is the first time there's a swarm of drones successfully flying outside in an unstructured environment, in the wild," she (Enrica Soria, a roboticist at the Swiss Federal Institute of Technology Lausanne) said, adding the experiment was "impressive."</li>
+      </p>
+      <p>
+      <li><a href="https://www.newscientist.com/article/2318637-watch-a-swarm-of-drones-navigate-a-forest-without-crashing/"><strong>New Scientist</strong></a>, <a href="https://www.theverge.com/2022/5/5/23058160/drone-swarm-autonomous-navigation-dense-forest-person-tracking"><strong>The Verge</strong></a>, <a href="https://techcrunch.com/2022/05/04/swarming-drones-autonomously-navigate-a-dense-forest-and-chase-a-human/"><strong>TechCrunch</strong></a>.</li>
+      </p>
+      <p>
+      <li><a href="https://spectrum.ieee.org/video-friday-mit-media-lab-tf8-bionic-ankle"><strong>IEEE Spectrum on EGO-Planner</strong></a>: Very impressive local obstacle avoidance at a fairly high speed on a small drone, both indoors and outdoors.</li>
+      </p>
+      <p>
+      <li><a href="https://spectrum.ieee.org/video-friday-household-skills"><strong>IEEE Spectrum</strong></a> on <a href="https://arxiv.org/pdf/2106.12481.pdf">a technical report about aerial swarms</a>: A video on decentralized trajectory planning for multicopter swarms with some lovely visualizations.</li>
+      </p>
+    </div>
+
+    <!-- Ending -->
+    <div class="w3-center w3-padding-24">
 
       Acknowledgement: the page is built on <a href="https://github.com/YunheWang/HomePage">this repo</a>.</br>
-
-      <!-- Default Statcounter code for My Homepage
-  https://www.wangyunhe.site -->
-      <!--   No.
-  <script type="text/javascript">
-  var sc_project=12347113; 
-  var sc_invisible=0; 
-  var sc_security="21aca5d1"; 
-  var sc_https=1; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script> Visitor Since Feb 2022. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
-  <noscript>
-    <div class="statcounter"><a title="Web Analytics Made Easy -
-  StatCounter" href="https://statcounter.com/" target="_blank"><img
-  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
-  alt="Web Analytics Made Easy - StatCounter"></a></div>
-  </noscript> -->
-      <!-- End of Statcounter Code -->
 
     </div>
 
